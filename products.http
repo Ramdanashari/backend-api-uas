@@ -1,0 +1,33 @@
+@baseUrl = http://localhost:3000
+
+# Get all products
+# GET {{baseUrl}}/api/products
+
+# Get product by ID
+# GET {{baseUrl}}/api/products/1
+
+# Create a new product
+# POST {{baseUrl}}/api/products
+# Content-Type: application/json
+
+# {
+#   "name": "coklat",
+#   "description": "manis",
+#   "price": 9000,
+#   "stock": 50,
+#   "userId": 4
+# }
+
+# # Update a product
+# PUT {{baseUrl}}/api/products/1
+# Content-Type: application/json
+
+# {
+#   "name": "lolipop",
+#   "description": "manis giung",
+#   "price": 29000,
+#   "stock": 7
+# }
+
+# # Delete a product
+# DELETE {{baseUrl}}/api/products/1

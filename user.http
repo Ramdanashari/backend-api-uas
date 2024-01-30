@@ -1,0 +1,35 @@
+# Register a new user
+# POST http://localhost:3000/api/users
+# Content-Type: application/json
+
+# {
+#   "name": "John Doe",
+#   "username": "johndoe",
+#   "password": "securepassword"
+# }
+
+# # Login user and get authentication token
+# POST http://localhost:3000/api/users/login
+# Content-Type: application/json
+
+# {
+#   "username": "johndoe",
+#   "password": "securepassword"
+# }
+
+# # # Get current user information
+# GET http://localhost:3000/api/users/current
+# Authorization: Bearer ccafa602-6d7c-487b-b27d-268d3cb7124b
+
+# # Update current user information
+# PATCH http://localhost:3000/api/users/current
+# Content-Type: application/json
+# Authorization: Bearer ccafa602-6d7c-487b-b27d-268d3cb7124b
+
+# {
+#   "name": "Updated John Doe"
+# }
+
+# Logout current user
+# DELETE http://localhost:3000/api/users/logout
+# Authorization: Bearer ccafa602-6d7c-487b-b27d-268d3cb7124b
